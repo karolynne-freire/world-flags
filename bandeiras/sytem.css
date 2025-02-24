@@ -1,0 +1,128 @@
+.quadrado {
+    position: relative;
+    background-color: green;
+    width: 250px;
+    height: 150px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 1px 1px black;
+
+  }
+
+  .quadrado .losango:before,
+.quadrado .losango:after {
+  position: absolute;
+}
+
+.quadrado .losango {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.quadrado .losango:before,
+.quadrado .losango:after {
+  content: '';
+  width: 0;
+  height: 0;
+  left: 20px;
+  right: 20px;
+}
+
+.quadrado .losango:before {
+  border-left: 105px solid transparent;
+  border-right: 105px solid transparent;
+  border-bottom: 65px solid yellow;
+  top: 10px;
+}
+
+.quadrado .losango:after {
+  border-left: 105px solid transparent;
+  border-right: 105px solid transparent;
+  border-top: 65px solid yellow;
+  bottom: 10px;
+}
+
+.quadrado .circulo {
+    overflow: hidden;
+    z-index: 2;
+    display: block;
+    background-color: blue;
+    height: 80px;
+    width: 80px;
+    margin-top: -40px;
+    margin-left: -40px;
+  
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+  }
+
+  .quadrado .circulo,
+.quadrado .circulo:before,
+.quadrado .circulo:after {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.quadrado .circulo:before,
+.quadrado .circulo:after {
+  width: 90px;
+  height: 40px;
+  -ms-transform: rotate(14deg);
+  -webkit-transform: rotate(14deg);
+  transform: rotate(14deg);
+}
+
+.quadrado .circulo:before {
+  z-index: 3;
+  content: '';
+  margin-top: -20px;
+  margin-left: -45px;
+  background: wheat;
+}
+
+.quadrado .circulo:after {
+  z-index: 4;
+  content: '';
+  margin-top: -10px;
+  margin-left: -48px;
+  background-color: blue;
+}
+
+.quadrado1 {
+    position: relative;
+    background-color: white;
+    width: 250px;
+    height: 150px;
+    box-shadow: 0px 0px 1px 1px black;
+    margin-bottom: 15px;
+  }
+
+  .quadrado1 .circulo1 {
+    overflow: hidden;
+    z-index: 2;
+    display: block;
+    background-color: red;
+    height: 90px;
+    width: 90px;
+    margin-top: -40px;
+    margin-left: -40px;
+  
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+     
+  }
